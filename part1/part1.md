@@ -1,7 +1,7 @@
 ## Part 1a 
 1. Line 9 prints "values added: 20"
 2. Line 13 prints "final result: 20"
-3. Line 9 prints "values added: 20"
+3. Line 9 prints "values added: 20" (assuming that line 13 would not give us an error)
 4. Line 13 returns an error because we declared result using the "let" keyword and tried using the variable result outside of its scope (i.e outside of the if statement it was declared in)
 5. The code returns an error because we cannot change "result" to num1 + num2 after it was initialize to 0.
 6. Line 13 would also return an error because we used "const" to declare result and therefore we cannot access it outside of its scope.  
@@ -37,4 +37,14 @@ C) 2 == '2' is true. We convert '2' to the integer 2 and compare the two values.
 D) 2 === '2' is false. We first check if the values are of the same type and since they are not this evaluates to false.
 E) true == 2 is false. true is converted to the integer 1 and then 1 is compared to 2.  
 F) true === Boolean(2) is true. Boolean(2) evaluates to true and then we simply check if true === true and since they are the same type and same value the comparison evaluates to true.  
-15) The == operator checks to see if two values are the same value after having performed the appropriate type conversions that JavaScript has. On the other hand === checks to see if two values are equal without converting any types.
+15) The == operator checks to see if two values are the same value after having performed the appropriate type conversions that JavaScript has. On the other hand === checks to see if two values are equal without converting any types.  
+16) See [part1b-question16.js](part1b-question16.js)
+
+17) The function will return a new array [2,4,6]. When we call modifyArray(), in each iteration of the for loop we call the callback function, which is doSomething. doSomething simply doubles the value of its argument, thus we simply double the value of each element in the array and push it into the new array.  
+18) See [part1b-question18.js](part1b-question18.js)
+
+19) The output of the code is:  
+1  
+4  
+3  
+2
