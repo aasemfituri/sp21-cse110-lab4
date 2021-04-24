@@ -19,7 +19,22 @@
 10. Line 12 would print 3. We declare length as the length of the prices array (which is 3) and thus print 3. No error occurs because we are still within the scope of the length variable (it was declared at the beginning of the function and thus we can utilize it anywhere after its declaration within the function).
 11. The function will return an array of discounted prices which in this case is [50, 100, 150]. This does not cause an error even though discounted is declared using the const keyword and elements were added to the array because in this case const simply means that the value stored in discounted cannot change and that value is simply a memory address which we have not altered at all.  
 12. A) student.name  
-B) student["Grad Year"]
-C) student.greeting();
-D) student['Favorite Teacher'].name
-E) student.courseLoad[0]
+B) student["Grad Year"]  
+C) student.greeting();  
+D) student['Favorite Teacher'].name  
+E) student.courseLoad[0]  
+13.  A)'3' + 2 = 32  The 2 is converted to a string and the strings are concatenated.  
+B)'3' - 2 = 1 The '3' is converted to an integer and the values are subtracted.  
+C) 3 + null = 3 null is converted to the integer 0 and the values are added.  
+D) '3' + null = 3null null is converted to the string "null" and the strings are concatenated.  
+E) true + 3 = 4 true is converted to the integer 1 and the values are added.  
+F) false + null = 0 false and null are both converted to the integer 0 and the values are added.  
+G) '3' + undefined = 3undefined undefined is converted to the string "undefined" and the strings are concatenated.  
+H) 3 - 'undefined' = NaN The string '3' is converted to the integer 3 and undefined is converted to NaN, thus subtracting them gives us NaN.  
+14. A) '2' > 1 = true '2' is converted to the integer 2 and then compared to 1.  
+B) '2' < '12' = false We simply compare the strings '2' and '12'. Thus, we first begin by comparing the first characters and since '2' comes after '1' the comparison evaluates to false.  
+C) 2 == '2' is true. We convert '2' to the integer 2 and compare the two values.  
+D) 2 === '2' is false. We first check if the values are of the same type and since they are not this evaluates to false.
+E) true == 2 is false. true is converted to the integer 1 and then 1 is compared to 2.  
+F) true === Boolean(2) is true. Boolean(2) evaluates to true and then we simply check if true === true and since they are the same type and same value the comparison evaluates to true.  
+15) The == operator checks to see if two values are the same value after having performed the appropriate type conversions that JavaScript has. On the other hand === checks to see if two values are equal without converting any types.
